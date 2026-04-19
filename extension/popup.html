@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepProof AI</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <span class="logo-icon">🔷</span>
+        <span class="logo-text">DeepProof <span class="logo-ai">AI</span></span>
+      </div>
+      <div class="status-dot" id="statusDot"></div>
+    </div>
+
+    <!-- Media counts -->
+    <div class="media-counts" id="mediaCounts">
+      <div class="count-card">
+        <span class="count-value" id="imageCount">—</span>
+        <span class="count-label">Images</span>
+      </div>
+      <div class="divider"></div>
+      <div class="count-card">
+        <span class="count-value" id="videoCount">—</span>
+        <span class="count-label">Videos</span>
+      </div>
+    </div>
+
+    <!-- Scan button -->
+    <button class="scan-btn" id="scanBtn">
+      <span class="btn-icon">🔍</span>
+      <span id="btnText">Scan This Page</span>
+    </button>
+
+    <!-- Results area -->
+    <div class="results" id="results" style="display:none;">
+      <div class="result-row">
+        <span class="result-label">Status</span>
+        <span class="result-value" id="resultStatus">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Media Scanned</span>
+        <span class="result-value" id="resultScanned">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Risk Level</span>
+        <span class="result-value" id="resultRisk">—</span>
+      </div>
+    </div>
+
+    <!-- Alert banner -->
+    <div class="alert" id="alert" style="display:none;"></div>
+
+    <!-- Footer link -->
+    <div class="footer">
+      <a href="http://localhost:3000" target="_blank" class="footer-link">
+        Open DeepProof Platform ↗
+      </a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
